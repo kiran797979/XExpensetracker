@@ -1,0 +1,36 @@
+
+main{
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #3B3B3B;
+  width: 100vw;
+  padding: 1rem;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 600px) {
+  .AppBody, .AppHead, .Transactions, .TopExpenses {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .Card, .PieChart, .TransactionBar {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  header.AppHead {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav {
+    font-size: 1.2rem;
+    padding: 12px 0;
+  }
+}
